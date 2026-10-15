@@ -43,7 +43,7 @@ namespace Tyuiu.GaitovaAA.Sprint2.Task0.V20
                 Console.WriteLine(res[i]);
             }
 
-            Console.ReadKey();
+            Console.ReadKey(); 
         }
     }
 }
