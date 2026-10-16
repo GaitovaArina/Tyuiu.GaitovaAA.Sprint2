@@ -6,12 +6,12 @@ namespace Tyuiu.GaitovaAA.Sprint2.Task5.V7.Lib
     {
         public string FindMonthName(int startYear, int n)
         {
-            if (n <= 0)
-            {
-                return "неверное значение";
-            }
+            int monthNumber = (n + 1) % 12;
 
-            int monthNumber = (n - 1) % 12 + 1;
+            if (monthNumber == 0)
+            {
+                monthNumber = 12;
+            }
 
             string res;
 
@@ -31,7 +31,6 @@ namespace Tyuiu.GaitovaAA.Sprint2.Task5.V7.Lib
                 case 12: res = "декабрь"; break;
                 default: res = "неверное значение"; break;
             }
-
             return res;
         }
     }
